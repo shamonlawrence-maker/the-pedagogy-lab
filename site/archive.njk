@@ -1,0 +1,11 @@
+---
+title: Archive
+layout: base.njk
+---
+<h1>Archive</h1>
+<ul>
+{% for p in lab.publications %}
+  <li id="{{ p.slug }}"><strong>{{ p.title }}</strong>{% if p.doi %} — DOI: {{ p.doi }}{% endif %}<br/>{{ p.abstract }}</li>
+{% endfor %}
+</ul>
+<p><a href="/publications/rss.xml">Publications RSS</a></p>
