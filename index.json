@@ -1,0 +1,29 @@
+{
+  "modules": [
+    {
+      "title": "Word Play Workshop",
+      "version": "v2025Q4",
+      "keywords": ["language reasoning", "interactive text"],
+      "last_modified": "2025-10-22T00:00:00Z",
+      "abstract": "An interactive text game exploring language reasoning."
+    }
+  ],
+  "foundation_essays": [
+    {
+      "title": "Experience as Code",
+      "version": "v2025Q4",
+      "keywords": ["Dewey", "experiential learning", "interactive simulations"],
+      "last_modified": "2025-10-22T00:00:00Z",
+      "abstract": "Essay connecting Dewey's Art as Experience to interactive simulations."
+    }
+  ],
+  "publications": [
+    {
+      "title": "Dialogue Loops: Branching Narratives as Reflective Pedagogy",
+      "version": "v2025Q4",
+      "keywords": ["critical pedagogy", "game design", "interactive narrative"],
+      "last_modified": "2025-10-22T00:00:00Z",
+      "abstract": "A draft exploring branching narratives as reflective pedagogy."
+    }
+  ]
+}
