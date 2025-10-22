@@ -7,19 +7,41 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Project-site default; set to "/the-pedagogy-lab/"; override to "/" if deploying at root
+      PATH_PREFIX: "/the-pedagogy-lab/"
+      NODE_ENV: "production"
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
-        with: { node-version: '20' }
-      - run: npm install
-      - run: npm run build
+        with:
+          node-version: '20'
+
+      - name: Cache npm
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build site (CSS + Eleventy)
+        run: npm run build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
   deploy:
     needs: build
-    permissions: { pages: write, id-token: write }
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
