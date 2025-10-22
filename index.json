@@ -1,24 +1,7 @@
 {
-  "modules": [
-    {
-      "slug": "word-play-workshop",
-      "title": "Word Play Workshop",
-      "abstract": "Interactive text to cultivate language reasoning."
-    }
-  ],
-  "publications": [
-    {
-      "slug": "dialogue-loops",
-      "title": "Dialogue Loops",
-      "abstract": "Branching narratives as reflective pedagogy."
-    }
-  ],
-  "essays": [
-    {
-      "slug": "experience-as-code",
-      "title": "Experience as Code",
-      "abstract": "Dewey reframed through interactive simulation."
-    }
-  ],
-  "residencies": []
+  "title": "The Pedagogy Lab",
+  "tagline": "Experiments in learning, design, and reflection by Shamon Lawrence.",
+  "description": "A public research lab where design is pedagogy and code is narrative.",
+  "author": "Shamon Lawrence",
+  "siteUrl": "https://shamonlawrence-maker.github.io/the-pedagogy-lab"
 }
