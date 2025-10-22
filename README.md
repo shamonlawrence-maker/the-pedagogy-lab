@@ -1,2 +1,3 @@
-# the-pedagogy-lab
-A curated learning engine: modular studios exploring code as pedagogy, design as reflection, and education as imaginative dialogue.
+### The Pedagogy Lab
+
+*Experiments in learning, design, and reflection by Shamon Lawrence.*
