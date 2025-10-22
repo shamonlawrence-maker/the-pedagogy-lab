@@ -1,0 +1,24 @@
+---
+title: The Pedagogy Lab
+layout: base.njk
+---
+<h1>The Pedagogy Lab</h1>
+<p><em>Experiments in learning, design, and reflection by Shamon Lawrence.</em></p>
+
+<section>
+  <h2>Experiments</h2>
+  <ul>
+  {% for m in lab.modules %}
+    <li><a href="/experiments/{{ m.slug }}/">{{ m.title }}</a> — {{ m.abstract }}</li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>Latest Publications</h2>
+  <ul>
+  {% for p in lab.publications %}
+    <li><a href="/archive/#{{ p.slug }}">{{ p.title }}</a> — {{ p.abstract }}</li>
+  {% endfor %}
+  </ul>
+</section>
