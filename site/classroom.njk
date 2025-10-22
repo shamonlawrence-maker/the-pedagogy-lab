@@ -1,0 +1,11 @@
+---
+title: Classroom
+layout: base.njk
+---
+<h1>Classroom</h1>
+<p>Residencies and discourse highlights.</p>
+<ul>
+{% for r in lab.residencies %}
+  <li><strong>{{ r.title }}</strong> — {{ r.abstract }}</li>
+{% endfor %}
+</ul>
