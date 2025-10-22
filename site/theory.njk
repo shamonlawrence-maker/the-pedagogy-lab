@@ -1,0 +1,10 @@
+---
+title: Theory
+layout: base.njk
+---
+<h1>Foundations</h1>
+<ul>
+{% for e in lab.essays %}
+  <li id="{{ e.slug }}"><strong>{{ e.title }}</strong> — {{ e.abstract }}</li>
+{% endfor %}
+</ul>
