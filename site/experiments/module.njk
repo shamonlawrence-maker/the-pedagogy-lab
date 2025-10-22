@@ -1,0 +1,15 @@
+---
+pagination:
+  data: lab.modules
+  size: 1
+  alias: mod
+permalink: "experiments/{{ mod.slug }}/index.html"
+layout: base.njk
+---
+<h1>{{ mod.title }}</h1>
+<p>{{ mod.abstract }}</p>
+{% if mod.doi %}<p><strong>DOI:</strong> {{ mod.doi }}</p>{% endif %}
+<p>
+  {% if mod.repo %}<a href="{{ mod.repo }}">Repository</a>{% endif %}
+  {% if mod.demo %}{% if mod.repo %} · {% endif %}<a href="{{ mod.demo }}">Live demo</a>{% endif %}
+</p>
