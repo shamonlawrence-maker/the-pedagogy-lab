@@ -1,0 +1,15 @@
+{
+  "name": "the-pedagogy-lab-site",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "build:rss": "node scripts/build-rss.js",
+    "build:site": "npm run build && npm run build:rss"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0"
+  }
+}
