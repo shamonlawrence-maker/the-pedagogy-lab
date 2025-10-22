@@ -1,0 +1,10 @@
+---
+title: Experiments
+layout: base.njk
+---
+<h1>Experiments</h1>
+<ul>
+{% for m in lab.modules %}
+  <li><a href="/experiments/{{ m.slug }}/">{{ m.title }}</a> — {{ m.abstract }}</li>
+{% endfor %}
+</ul>
